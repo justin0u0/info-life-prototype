@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prototype</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- Fontawecome Icon -->
+    <script src="https://kit.fontawesome.com/9cec982e10.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md px-5" id="header-navbar">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">Prototype</a>
+      
+      <!-- Toggler/Collapsible Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-link-group">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbar-link-group">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">主頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">主題專欄</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="qa.html">QA問答</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paints.html">場外哈拉</a>
+          </li>
+          <li class="nav-item" class="align-middle">
+            <a class="nav-link" href="javascript:void(0)" id="login-or-register">
+              <i class="far fa-user-circle"></i>
+              <span>登入 / 註冊</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- -- End Header -- -->
+
+    <!-- Breadcrumb -->
+    <div class="container mt-4">
+      <nav class="breadcrumb pl-0 mb-0">
+        <a class="breadcrumb-item" href="index.html">首頁</a>
+        <a class="breadcrumb-item" href="qa.html">QA問答</a>
+      </nav>
+    </div>
+    <!-- -- End Breadcrum -- -->
+
+    <div class="jumbotron qa-background">
+      <div class="container d-flex align-items-center">
+        <div class="qa-total">
+          <p>共<span class="qa-total-number">108</span>則提問</p>
+          <p>共<span class="qa-total-number">90</span>個回答</p>
+        </div>
+        <div class="card ml-auto" id="qa-card">
+          <div class="card-body">
+            <span>
+              世上總會有一個人<br>
+              知曉你問題的答案
+            </span>
+          </div>
+          <div class="card-footer d-flex">
+            <div class="w-50 text-center">
+              <a href="javascript:void(0)">
+                <i class="fas fa-question"></i>
+                <br>
+                提問
+              </a>
+            </div>
+            <div class="w-50 text-center">
+              <a href="javascript:void(0)">
+                <i class="fas fa-hand-paper"></i>
+                <br>
+                回答
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="container">
+      <ul class="nav nav-pills" id="nav-title-group">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">最新</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">熱門</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">已解決</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">未解決</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container mt-3" id="qa-main-section">
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mx-0 mb-4">
+        <div>
+          <h4>Question Title</h4>
+          <div class="d-flex align-items-center">
+            <div class="qa-tag-list mr-3">
+              <button class="btn btn-sm">選課</button>
+              <button class="btn btn-sm">課業</button>
+            </div>
+            <span class="mr-3">2020-04-03</span>
+            <span>
+              由<a href="#"> justin0u0 </a>提問
+            </span>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <div class="row text-center">
+            <div class="col">
+              <p>瀏覽</p>
+              <span>50</span>
+            </div>
+            <div class="col">
+              <p>回答</p>
+              <span>7</span>
+            </div>
+            <div class="col">
+              <p>喜歡</p>
+              <span>43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -- End Main Section -- -->
+  </body>
+</html>

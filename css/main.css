@@ -1,0 +1,190 @@
+
+/* Navbar */
+#header-navbar {
+  background-color: #99ccff;
+}
+
+#header-navbar a {
+  color: #4d4d4d;
+}
+
+#navbar-link-group ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 0.8em;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>'
+}
+
+/* Title Group */
+#nav-title-group {
+  margin-left: -1em;
+}
+#nav-title-group li a {
+  color: #4d4d4d;
+}
+#nav-title-group li a.active {
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Card */
+.article-author {
+  color: #434343;
+  font-size: 0.95em;
+}
+
+.article-author::before {
+  content: '撰文 | ';
+  color: #434343;
+  font-size: 0.95em;
+}
+
+.tag-list a {
+  font-size: 0.95em;
+}
+
+/* Painter */
+.painter-title {
+  font-size: 2em;
+}
+.painter-title span a {
+  text-decoration: none;
+  color: inherit;
+}
+.painter-title span a:hover {
+  text-decoration: none;
+  color: #444444;
+}
+
+.painter-icon-group {
+  font-size: 0.5em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.painter-icon-group span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.responsive-rectangle {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.responsive-rectangle::after {
+  content: "";
+  display: block;
+  padding-top: 60%;
+  border: 1.5px solid #232323;
+  border-radius: 0.5em;
+}
+
+/* Paint */
+.paint-title-bar {
+  height: 50px;
+}
+.circular-image {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.circular-image img {
+  width: auto;
+  height: 100%;
+  margin-left: -12.5px;
+}
+.user-avatar {
+  height: 50px;
+}
+.chatbox {
+  position: relative;
+}
+.chat:nth-child(even) .chatbox {
+  background-color: #eaf3f9;
+}
+.chat:nth-child(odd) .chatbox {
+  background-color: #d1e6f5;
+}
+.chatbox::before {
+  position:absolute;
+  left: -12px;
+  top: 16px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 12px 7px 0;
+}
+.chat:nth-child(even) .chatbox::before {
+  border-color: transparent #eaf3f9 transparent transparent;
+}
+.chat:nth-child(odd) .chatbox::before {
+  border-color: transparent #d1e6f5 transparent transparent;
+}
+
+/* QA */
+.qa-tag-list button {
+  background-color: #cce5ff;
+  color: #454560;
+  padding: .1rem .3rem;
+  margin-right: .5rem;
+}
+.qa-background {
+  background-image: url('../assets/qa_background.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  /*
+  background-color: rgb(251, 229, 214);
+  */
+}
+.qa-total {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.qa-total-number {
+  display: inline-block;
+  width: 3em;
+  text-align: right;
+  margin-right: 1em;
+}
+#qa-card {
+  opacity: 0.7;
+  height: 300px;
+  border: none;
+  border-radius: 0.5rem;
+}
+#qa-card .card-body {
+  background-color: #d8b58f;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#qa-card .card-footer {
+  border: none;
+}
+#qa-card .card-footer a {
+  text-decoration: none;
+  color: black;
+}
