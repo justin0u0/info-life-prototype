@@ -2,32 +2,48 @@
 <html>
   <head>
     <title>Prototype</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.js"></script>
 
     <!-- Fontawecome Icon -->
-    <script src="https://kit.fontawesome.com/9cec982e10.js" crossorigin="anonymous"></script>
+    <script src="./js/fontawesome.min.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- Favicon -->
+    <link rel="shoutcut icon" type="image/png" href="assets/favicon.ico">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-md px-5" id="header-navbar">
+    <nav class="navbar navbar-expand-md px-5 text-center fixed-top" id="header-navbar">
       <!-- Logo -->
-      <a class="navbar-brand" href="index.html">Prototype</a>
-      
+      <a class="navbar-brand" href="#">InfoLife</a>
+
       <!-- Toggler/Collapsible Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-link-group">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-link-group">
+        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fas fa-bars"></i></span>
       </button>
 
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbar-link-group">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item nav-active">
             <a class="nav-link" href="index.html">主頁</a>
           </li>
           <li class="nav-item">
@@ -49,5 +65,215 @@
       </div>
     </nav>
     <!-- -- End Header -- -->
+
+    <div id="section1" class="d-flex align-items-center p-relative">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-12 d-flex align-items-center fade-in">
+            <div class="w-100 text-center index-info mt-5">
+              <p>Share Your Info</p>
+              <p>&</p>
+              <p>Share Your Life</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12 fade-in p-5">
+            <img src="assets/logo.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section2" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section2" class="d-flex align-items-center p-relative section-background section-problem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-12 d-flex flex-column p-lg-5 p-3" data-aos="fade-right" data-aos-duration="2000">
+            <div class="w-50 mb-lg-5 mb-3" style="height: 30px; background-color: #bbd2e2"></div>
+            <p>
+              身為一個有抱負的學生<br>想出國、想實習<br>想超越自己
+            </p>
+          </div>
+          <div class="col-md-5 col-12 p-lg-5 p-3" data-aos="fade-left" data-aos-duration="2000">
+            <img src="assets/section2-1.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section3" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section3" class="d-flex align-items-center p-relative section-background section-intro">
+      <div class="container px-5">
+        <h3 class="mb-5">歡迎使用</h3>
+        <h1 class="text-center mb-5">
+          <a class="text-dark" href="article.html">主題專欄</a>
+        </h1>
+        <div class="row">
+          <div class="col-md-4 col-12 text-center" data-aos="flip-left" data-aos-duration="2000">
+            <img src="assets/section3-1.png" class="img-fluid">
+            <p class="mt-3">分享經驗</p>
+          </div>
+          <div class="col-md-4 col-12 text-center" data-aos="flip-left" data-aos-duration="2000">
+            <img src="assets/section3-2.png" class="img-fluid">
+            <p class="mt-3">分享技術</p>
+          </div>
+          <div class="col-md-4 col-12 text-center" data-aos="flip-left" data-aos-duration="2000">
+            <img src="assets/section3-3.png" class="img-fluid">
+            <p class="mt-3">分享方法</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section4" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section4" class="d-flex align-items-center p-relative section-background section-problem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12 p-lg-4 p-3" data-aos="fade-right" data-aos-duration="2000">
+            <img src="assets/section4-1.png" class="img-fluid">
+          </div>
+          <div class="col-md-8 col-12 d-flex flex-column p-lg-4 p-3 align-items-end" data-aos="fade-left" data-aos-duration="2000">
+            <div class="w-50 mb-lg-5 mb-3" style="height: 30px; background-color: #ffbfa0"></div>
+            <p>
+              身而為人，生命中總會遇到一些障礙<br>當你怎麼搜尋就是搜不到答案時......
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section5" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section5" class="d-flex align-items-center p-relative section-background section-intro">
+      <div class="container px-5">
+        <h3 class="mb-5">歡迎使用</h3>
+        <h1 class="text-center mb-5">
+          <a class="text-dark" href="qa.html">QA問答</a>
+        </h1>
+        <div class="row">
+          <div class="col-md-4 col-12 text-center" data-aos="flip-right" data-aos-duration="2000">
+            <img src="assets/section5-1.png" class="img-fluid">
+            <p class="mt-3">問問題</p>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <img src="assets/section5-2.png" class="img-fluid" data-aos="flip-right" data-aos-duration="2000">
+            <p class="mt-3">回答</p>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <img src="assets/section5-3.png" class="img-fluid" data-aos="flip-right" data-aos-duration="2000">
+            <p class="mt-3">找答案</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section6" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section6" class="d-flex align-items-center p-relative section-background section-problem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-12 d-flex flex-column p-lg-4 p-3" data-aos="fade-right" data-aos-duration="2000">
+            <div class="w-50 mb-lg-5 mb-3" style="height: 30px; background-color: #edafb8"></div>
+            <p>
+              學習學累了？<br>覺得無聊、沒樂趣？
+            </p>
+          </div>
+          <div class="col-md-7 col-12 p-lg-4 p-3 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
+            <img src="assets/section6-1-1.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#section7" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="section7" class="d-flex align-items-center p-relative section-background section-intro">
+      <div class="container px-5">
+        <h3 class="mb-5">歡迎使用</h3>
+        <h1 class="text-center mb-5">
+          <a class="text-dark" href="paints.html">場外哈拉</a>
+        </h1>
+        <div class="row">
+          <div class="col-md-4 col-12 text-center" data-aos="flip-left" data-aos-duration="2000">
+            <img src="assets/section7-1.png" class="img-fluid">
+            <p class="mt-3">發起話題</p>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <img src="assets/section7-2.png" class="img-fluid" data-aos="flip-left" data-aos-duration="2000">
+            <p class="mt-3">塗鴉留言</p>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <img src="assets/section7-3.png" class="img-fluid" data-aos="flip-left" data-aos-duration="2000">
+            <p class="mt-3">尋找樂趣</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down text-center w-100">
+        <a href="#footer" class="scroll-link">
+          <button class="btn btn-lg border-0">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <footer id="footer" class="d-flex p-5">
+      <img src="assets/logo.png" class="footer-image">
+      <div class="container d-flex justify-content-center">
+        <div>
+          <p>Developer</p>
+          <p>陳劭愷<a class="ml-3 text-dark" target="_blank" href="https://github.com/justin0u0">https://github.com/justin0u0</a></p>
+          <p>陳奕君<a class="ml-3 text-dark" target="_blank" href="https://github.com/wazenmai">https://github.com/wazenmai</a></p>
+          <p>王領崧<a class="ml-3 text-dark" target="_blank" href=""></a></p>
+          <p>羅家濬<a class="ml-3 text-dark" target="_blank" href=""></a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = () => {
+        AOS.init();
+      };
+      $(document).ready(function() {
+        $('a.scroll-link').click(function(event) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+          }, 1000, 'swing');
+        })
+      });
+    </script>
   </body>
 </html>

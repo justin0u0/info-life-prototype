@@ -1,11 +1,80 @@
 
+/* Body */
+html, body {
+  height: 100%;
+}
+
+/* Index */
+
+.index-info {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.8vw;
+  letter-spacing: .3rem;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+}
+
+#section1 {
+  background-image: url('../assets/section1_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.section-background {
+  background-image: url('../assets/section_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.section-problem {
+  font-size: 3vw;
+  line-height: 2em;
+}
+
+.section-intro h1 {
+  font-size: 4.5rem;
+}
+
+.section-intro p {
+  font-size: 1.5rem;
+}
+
 /* Navbar */
 #header-navbar {
-  background-color: #99ccff;
+  /* background-color: #99ccff; */
 }
 
 #header-navbar a {
   color: #4d4d4d;
+}
+
+#header-navbar li.nav-active a {
+  border: none;
+}
+
+#header-navbar li:hover a {
+  border: none;
+  transition: 0.2s;
+}
+
+@media (min-width: 768px) {
+  #header-navbar li.nav-active a {
+    border-bottom: 2px solid black;
+  }
+  #header-navbar li:hover a {
+    border-bottom: 2px solid black;
+  }
 }
 
 #navbar-link-group ul li {
@@ -187,4 +256,15 @@
 #qa-card .card-footer a {
   text-decoration: none;
   color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #daf5ff;
+  height: 300px;
+  font-size: 1.3rem;
+}
+.footer-image {
+  max-height: 100%;
+  width: auto;
 }
